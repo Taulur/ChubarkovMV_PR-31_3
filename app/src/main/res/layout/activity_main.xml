@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59E1FF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:background="@color/white"
+        android:layout_marginBottom="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="65sp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/mainicon"
+                android:layout_marginRight="10sp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_title"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="36sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/chosen"
+    android:layout_width="300sp"
+    android:layout_height="35sp"
+    android:background="@drawable/borders"
+    android:backgroundTint="@color/white"
+    android:fontFamily="@font/roboto"
+    android:layout_marginBottom="20sp"
+    android:text="Ваш выбор"
+    android:textColor="@color/black"
+    android:textAlignment="center">
+
+</TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:background="@drawable/borders"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="20sp"
+        android:entries="@array/Квартиры"
+        android:fontFamily="@font/roboto"
+        android:text="Ваш выбор"
+        android:textColor="@color/black"
+        android:textAlignment="center">
+
+</Spinner>
+
+    <EditText
+        android:id="@+id/meters"
+        android:layout_width="175sp"
+        android:layout_height="30sp"
+        android:background="@drawable/borders"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="35sp"
+        android:fontFamily="@font/roboto"
+        android:ems="10"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:hint="Введите кол-во метров"
+        android:textColor="@color/black">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/dark_blue"
+        android:fontFamily="@font/roboto"
+        android:onClick="enter"
+        android:text="@string/main_button"
+        android:background="@drawable/borders"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25sp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="175sp"
+        android:layout_height="30sp"
+        android:fontFamily="@font/roboto"
+        android:text="Результат"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@drawable/borders"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="140sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/white">
+
+    </LinearLayout>
+
+
+</LinearLayout>

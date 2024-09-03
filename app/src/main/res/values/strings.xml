@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Квартиры</string>
+    <string name="hint_login">Введите ваш логин и пароль</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="main_title">Расчет площади</string>
+    <string name="main_button">Рассчитать</string>
+
+    <string-array name="Квартиры">
+        <item>Однокомнатная квартира</item>
+        <item>Двухкомнатная квартира</item>
+        <item>Трехкомнатная квартира</item>
+        <item>Четырехкомнатная квартира</item>
+    </string-array>
+</resources>
