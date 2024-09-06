@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="170sp"
         android:background="@color/white"
-        android:layout_marginBottom="20sp">
+        android:layout_marginBottom="100sp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/main_title"
+                android:text="Результат расчета"
                 android:textAlignment="center"
                 android:textColor="@color/pink"
                 android:textSize="36sp"
@@ -45,67 +45,27 @@
 
     </LinearLayout>
 
-<TextView
-    android:id="@+id/chosen"
-    android:layout_width="300sp"
-    android:layout_height="35sp"
-    android:background="@drawable/borders"
-    android:backgroundTint="@color/white"
-    android:fontFamily="@font/roboto"
-    android:layout_marginBottom="20sp"
-    android:text="Ваш выбор"
-    android:textColor="@color/black"
-    android:textAlignment="center">
 
-</TextView>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="300sp"
-        android:layout_height="35sp"
-        android:background="@drawable/borders"
-        android:backgroundTint="@color/white"
-        android:layout_marginBottom="20sp"
-        android:entries="@array/Квартиры"
-        android:fontFamily="@font/roboto"
-        android:text="Ваш выбор"
-        android:textColor="@color/black"
-        android:textAlignment="center">
 
-</Spinner>
 
-    <EditText
+    <TextView
         android:id="@+id/meters"
         android:layout_width="175sp"
         android:layout_height="30sp"
         android:background="@drawable/borders"
         android:backgroundTint="@color/white"
-        android:layout_marginBottom="35sp"
+        android:layout_marginBottom="125sp"
         android:fontFamily="@font/roboto"
         android:ems="10"
-        android:textSize="14sp"
-        android:inputType="number"
+        android:text="Количество метров"
+        android:textStyle="bold"
         android:textAlignment="center"
+        android:textSize="14sp"
         android:textColorHint="@color/black"
-        android:hint="Введите кол-во метров"
         android:textColor="@color/black">
 
-    </EditText>
-
-    <Button
-        android:id="@+id/enter"
-        android:layout_width="350dp"
-        android:layout_height="65dp"
-        android:backgroundTint="@color/dark_blue"
-        android:fontFamily="@font/roboto"
-        android:onClick="enter"
-        android:text="@string/main_button"
-        android:background="@drawable/borders"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="25sp"/>
+    </TextView>
 
     <TextView
         android:id="@+id/result"
@@ -118,9 +78,24 @@
         android:textAlignment="center"
         android:background="@drawable/borders"
         android:backgroundTint="@color/white"
-        android:layout_marginBottom="140sp">
+        android:layout_marginBottom="75sp">
 
     </TextView>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/dark_blue"
+        android:fontFamily="@font/roboto"
+        android:onClick="enter"
+        android:text="Вернуться"
+        android:background="@drawable/borders"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
